@@ -1,0 +1,120 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+$positive: #3D84A8;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+.icon-sprite, .icon-about, .icon-clear, .icon-clouds-big, .icon-clouds, .icon-home, .icon-rain, .row_active i {
+  background-image: url('../img/icon-sf81fe3aabe.png');
+  background-repeat: no-repeat; }
+
+.icon-clear {
+  background-position: 0 -132px;
+  height: 50px;
+  width: 50px; }
+
+.icon-clouds-big {
+  background-position: 0 -182px;
+  height: 72px;
+  width: 96px; }
+
+.icon-clouds {
+  background-position: 0 0;
+  height: 50px;
+  width: 50px; }
+
+.icon-home {
+  background-position: -32px -50px;
+  height: 32px;
+  width: 32px; }
+
+.icon-rain {
+  background-position: 0 -82px;
+  height: 50px;
+  width: 50px; }
+
+
+.row-title {
+  height: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  background-color: #46CDCF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold; }
+
+.row {
+  height: 60px;
+  background-color: #46CDCF;
+  margin: 1px 0;
+  position: relative; }
+  .row i {
+    position: absolute;
+    left: 20px;
+    top: 5px; }
+  .row .temperature {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+    line-height: 60px; }
+  .row strong {
+    color: #fff;
+    text-transform: uppercase; }
+  .row .date {
+    line-height: 60px;
+    font-size: 16px;
+    position: absolute;
+    left: 90px;
+    top: 0; }
+
+.row_active {
+  margin: 0;
+  height: 133px;
+  background-color: #46CDCF;
+  color: white !important; }
+  .row_active .date {
+    position: absolute;
+    top: 0;
+    left: 25px; }
+  .row_active .temperature {
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    font-size: 70px;
+    line-height: 70px; }
+  .row_active i {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    left: auto; }
+  .row_active i {
+    background-position: 0 -182px;
+    height: 72px;
+    width: 96px; }

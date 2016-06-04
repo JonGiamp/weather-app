@@ -1,0 +1,14 @@
+<ion-view view-title="Météo {{weather.city.name}}/{{weather.city.country}}">
+  <ion-content>
+      	
+    <div class="row" ng-class="{row_active: $index==0}" ng-repeat="t in weather.list" ng-click="expand($event)">
+        <div class="temperature">{{Math.round(t.temp.day)}}°C</div>
+        <div class="date">
+          <strong>{{t.dt*1000 | date:'EEE'}}</strong>
+          {{t.dt*1000 | date:'dd/MM'}}
+        </div>
+        <i class="icon-{{t.weather[0].main.toLowerCase() }}"></i>
+      </div>
+
+  </ion-content>
+</ion-view>
